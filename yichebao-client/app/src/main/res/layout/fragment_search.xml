@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<include
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/default_action_height"
+		android:layout_margin="5dp"
+		layout="@layout/action_search" />
+
+	<TextView
+		android:id="@+id/no_result"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:gravity="center"
+		android:text="@string/no_match_result"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:visibility="gone" />
+
+	<ListView
+		android:id="@+id/search_result_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:listitem="@layout/listitem_bookinfo" >
+	</ListView>
+
+</LinearLayout>

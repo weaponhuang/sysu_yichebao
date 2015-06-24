@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/action_search"
+	android:layout_width="match_parent"
+	android:layout_height="45dp" >
+
+	<Spinner
+		android:id="@+id/search_condition_spinner"
+		android:layout_width="80dp"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:entries="@array/search_condition"
+		android:paddingLeft="10dp" />
+
+	<EditText
+		android:id="@+id/search_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_toLeftOf="@+id/search_button"
+		android:layout_toRightOf="@+id/search_condition_spinner"
+		android:hint="@string/text_or_lable" />
+
+	<Button
+		android:id="@+id/search_button"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="5dp"
+		android:background="@drawable/btn_search_selector"
+		android:enabled="false" />
+
+</RelativeLayout>
