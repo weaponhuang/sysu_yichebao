@@ -1,0 +1,2 @@
+/Users/hwp/AndroidStudioProjects/TaoShuSYSU_Client-master/app/build/intermediates/classes/debug
+/Users/hwp/AndroidStudioProjects/TaoShuSYSU_Client-master/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-43a166202510bae57ea0a8173e87ba272d3e96d4.jar
