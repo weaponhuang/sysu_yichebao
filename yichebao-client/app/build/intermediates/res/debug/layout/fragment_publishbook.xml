@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/publish_scroller"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginBottom="@dimen/activity_vertical_margin"
+	android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	android:layout_marginRight="@dimen/activity_horizontal_margin"
+	android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<ImageView
+			android:id="@+id/image_be_upload"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:contentDescription="@string/upload"
+			android:src="@drawable/ic_launcher"
+			android:visibility="gone" />
+
+		<Button
+			android:id="@+id/upload_photo"
+			style="@style/green_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/upload_photo" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:text="@string/book_name"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/add_book_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/add_book_name" >
+
+			<requestFocus />
+		</EditText>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:text="@string/add_label"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/add_label"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/add_label_hint"
+			android:minLines="3" >
+
+			<requestFocus />
+		</EditText>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:text="@string/add_introduce"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+			android:id="@+id/add_introduce"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/add_introduce_hint"
+			android:minLines="3" />
+
+		<Button
+			android:id="@+id/confirm_upload"
+			style="@style/green_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:enabled="false"
+			android:text="@string/confirm" />
+	</LinearLayout>
+
+</ScrollView><!-- From: file:/Users/hwp/Desktop/项目代码/yichebao-client/app/src/main/res/layout/fragment_publishbook.xml -->

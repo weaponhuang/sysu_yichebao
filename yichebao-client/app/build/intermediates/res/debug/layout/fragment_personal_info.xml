@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="5dp"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/user_name_comma"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+			android:id="@+id/user_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/default_user_name"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/user_join_time_comma"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+			android:id="@+id/user_join_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/default_user_join_time"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:text="@string/book_has_been_publish"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<ListView
+		android:id="@+id/user_upload_book_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:listitem="@layout/listitem_bookinfo" />
+
+</LinearLayout><!-- From: file:/Users/hwp/Desktop/项目代码/yichebao-client/app/src/main/res/layout/fragment_personal_info.xml -->

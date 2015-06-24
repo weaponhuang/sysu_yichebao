@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:drawable="@drawable/btn_pressed" android:state_pressed="true"/>
+	<item android:drawable="@drawable/btn_pressed" android:state_focused="true"/>
+	<item android:drawable="@drawable/btn_disable" android:state_enabled="false"/>
+	<item android:drawable="@drawable/btn_default"/>
+
+</selector><!-- From: file:/Users/hwp/Desktop/项目代码/yichebao-client/app/src/main/res/drawable/green_btn_selector.xml -->

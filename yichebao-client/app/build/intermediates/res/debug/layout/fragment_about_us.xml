@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="开发者" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="黄伟鹏 陈辉 曹志军" />
+
+</LinearLayout><!-- From: file:/Users/hwp/Desktop/项目代码/yichebao-client/app/src/main/res/layout/fragment_about_us.xml -->

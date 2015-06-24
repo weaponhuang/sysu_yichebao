@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<ImageView
+		android:id="@+id/main_image"
+		android:layout_width="240dp"
+		android:layout_height="240dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="50dp"
+		android:background="@drawable/ic_app_launcher"
+		android:contentDescription="@string/app_name" />
+
+	<Button
+		android:id="@+id/login"
+		style="@style/green_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/main_image"
+		android:layout_alignRight="@+id/main_image"
+		android:layout_below="@+id/main_image"
+		android:text="@string/login" />
+
+	<Button
+		android:id="@+id/register"
+		style="@style/green_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/main_image"
+		android:layout_alignRight="@+id/main_image"
+		android:layout_below="@+id/login"
+		android:text="@string/register" />
+
+</RelativeLayout><!-- From: file:/Users/hwp/Desktop/项目代码/yichebao-client/app/src/main/res/layout/fragment_launch.xml -->
