@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+	-->
+	<style name="AppBaseTheme" parent="android:Theme.Light">
+		<!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+		-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+
+	<style name="LoginFormContainer">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:padding">16dp</item>
+	</style>
+
+	<style name="green_button" parent="android:Widget.Holo.Light.Button">
+		<item name="android:background">@drawable/green_btn_selector</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:textSize">@dimen/default_button_size</item>
+	</style>
+
+	<style name="Theme.Taoshusysu" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+		<item name="android:actionBarItemBackground">@drawable/selectable_background_taoshusysu</item>
+		<item name="android:popupMenuStyle">@style/PopupMenu.Taoshusysu</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.Taoshusysu</item>
+		<item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Taoshusysu</item>
+		<item name="android:actionDropDownStyle">@style/DropDownNav.Taoshusysu</item>
+		<item name="android:actionBarStyle">@style/ActionBar.Solid.Taoshusysu</item>
+		<item name="android:actionModeBackground">@drawable/cab_background_top_taoshusysu</item>
+		<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_taoshusysu</item>
+		<item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Taoshusysu</item>
+
+		<!-- Light.DarkActionBar specific -->
+		<item name="android:actionBarWidgetTheme">@style/Theme.Taoshusysu.Widget</item>
+	</style>
+
+	<style name="ActionBar.Solid.Taoshusysu" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+		<item name="android:background">#000000</item>
+		<item name="android:backgroundStacked">#000000</item>
+		<item name="android:backgroundSplit">#000000</item>
+		<item name="android:progressBarStyle">@style/ProgressBar.Taoshusysu</item>
+	</style>
+
+	<style name="ActionBar.Transparent.Taoshusysu" parent="@android:style/Widget.Holo.ActionBar">
+		<item name="android:background">@drawable/ab_transparent_taoshusysu</item>
+		<item name="android:progressBarStyle">@style/ProgressBar.Taoshusysu</item>
+	</style>
+
+	<style name="PopupMenu.Taoshusysu" parent="@android:style/Widget.Holo.ListPopupWindow">
+		<item name="android:popupBackground">#525252</item>
+	</style>
+
+	<style name="DropDownListView.Taoshusysu" parent="@android:style/Widget.Holo.ListView.DropDown">
+		<item name="android:listSelector">@drawable/selectable_background_taoshusysu</item>
+	</style>
+
+	<style name="ActionBarTabStyle.Taoshusysu" parent="@android:style/Widget.Holo.ActionBar.TabView">
+		<item name="android:background">@drawable/tab_indicator_ab_taoshusysu</item>
+	</style>
+
+	<style name="DropDownNav.Taoshusysu" parent="@android:style/Widget.Holo.Spinner">
+		<item name="android:background">@drawable/spinner_background_ab_taoshusysu</item>
+		<item name="android:popupBackground">#525252</item>
+		<item name="android:dropDownSelector">@drawable/selectable_background_taoshusysu</item>
+	</style>
+
+	<style name="ProgressBar.Taoshusysu" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+		<item name="android:progressDrawable">@drawable/progress_horizontal_taoshusysu</item>
+	</style>
+
+	<style name="ActionButton.CloseMode.Taoshusysu" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+		<item name="android:background">@drawable/btn_cab_done_taoshusysu</item>
+	</style>
+
+	<!-- this style is only referenced in a Light.DarkActionBar based theme -->
+	<style name="Theme.Taoshusysu.Widget" parent="@android:style/Theme.Holo">
+		<item name="android:popupMenuStyle">@style/PopupMenu.Taoshusysu</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.Taoshusysu</item>
+	</style>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:paddingLeft="10dp" >
+
+	<EditText
+		android:id="@+id/comment_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@+id/send_comment"
+		android:hint="@string/comment"
+		android:textSize="20sp" />
+
+	<Button
+		android:id="@+id/send_comment"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/btn_send_selector"
+		android:contentDescription="@string/comment"
+		android:enabled="false" />
+
+</RelativeLayout>

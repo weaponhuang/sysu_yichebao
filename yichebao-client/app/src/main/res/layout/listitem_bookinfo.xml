@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/listitem"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="5dp"
+	android:layout_marginTop="5dp"
+	android:paddingBottom="5dp" >
+
+	<TextView
+		android:id="@+id/list_bookid"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone" />
+
+	<ImageView
+		android:id="@+id/list_bookimg"
+		android:layout_width="90dp"
+		android:layout_height="120dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_margin="5dp"
+		android:contentDescription="@string/app_name"
+		android:src="@drawable/default_book_cover" />
+
+	<TextView
+		android:id="@+id/list_book_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@+id/list_bookimg"
+		android:layout_marginRight="15dp"
+		android:layout_toRightOf="@+id/list_bookimg"
+		android:text="@string/default_book_name"
+		android:textSize="20sp" />
+
+	<TextView
+		android:id="@+id/list_book_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/list_author_user"
+		android:layout_alignLeft="@+id/list_book_name"
+		android:layout_alignRight="@+id/list_book_name"
+		android:layout_below="@+id/list_book_name"
+		android:text="@string/default_book_introduce"
+		android:textColor="@color/text_gray"
+		android:textSize="17sp" />
+
+	<TextView
+		android:id="@+id/list_author_user"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/list_bookimg"
+		android:layout_alignLeft="@+id/list_book_name"
+		android:layout_gravity="left"
+		android:text="@string/default_user_name" />
+
+	<TextView
+		android:id="@+id/list_create_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/list_author_user"
+		android:layout_alignBottom="@+id/list_bookimg"
+		android:layout_alignRight="@+id/list_book_name"
+		android:layout_alignTop="@+id/list_author_user"
+		android:text="@string/default_date" />
+
+</RelativeLayout>
